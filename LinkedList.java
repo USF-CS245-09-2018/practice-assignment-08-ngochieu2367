@@ -30,21 +30,13 @@ public class LinkedList implements List{
 			head = node;
 		}
 		Node node = head;
-		//int pos = 
 		while(node.next != null){
-				//node.data = data;
-				node = node.next;
-				//++size;
-			
+			node = node.next;
+		
 		}
-
-		//Node previous = getNode(pos-1);
 		Node newNode = new Node();
 		newNode.data = obj;
 		node.next = newNode;
-
-		//newNode.next = previous.next;
-		//previous.next = newNode;
 		++size;
 	}
 
